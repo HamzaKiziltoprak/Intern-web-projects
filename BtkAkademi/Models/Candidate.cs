@@ -14,7 +14,6 @@ namespace BtkAkademi.Models
         public int? Age { get; set; }
         public String? SelectedCourse { get; set; } = String.Empty;
         public DateTime ApplyAt { get; set; }
-
         public Candidate()
         {
             ApplyAt = DateTime.Now;
