@@ -9,7 +9,7 @@ namespace BtkAkademi.Models
     {
         private static List<Candidate> applications = new();
         public static IEnumerable<Candidate> Applications => applications; // erişim için interface
-
+        // numra edilebilir            
         public static void Add(Candidate candidate)
         {
             applications.Add(candidate);

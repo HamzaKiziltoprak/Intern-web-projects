@@ -16,7 +16,7 @@ namespace BtkAkademi.Controllers
        {
             var model = Repository.Applications;
         
-           return View("Index");
+           return View(model);
        }
        // get için kullanılır
        public IActionResult Apply()
@@ -31,9 +31,8 @@ namespace BtkAkademi.Controllers
        public IActionResult Apply([FromForm] Candidate model)
        {
             Repository.Add(model);
-            
-           return View("Feedback",model);
 
+           return View("Feedback",model);
        }
     
     }

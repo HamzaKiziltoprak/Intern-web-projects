@@ -1,9 +1,9 @@
-@model Candidate
+@model Candidate // 
 
 <div>
     <h3 class="display-4">Congratulations @Model.FullName</h3>
-    <p class="lead">your application has been <mark>Accepted.</mark></p>
-    <p class="lead">many thanks for your interest.</p>
+    <p class="lead">Your application has been <mark>Accepted.</mark></p>
+    <p class="lead">Many thanks for your interest.</p>
     <hr />
     <blockquote class="blockquote">
         You have enroled to @Model.SelectedCourse course.
@@ -11,8 +11,7 @@
     <p class="text-muted"> You applied at @Model.ApplyAt</p>
 
     <div class="btn-group">
-        <a class="btn btn-outline-success" asp-action="Index" asp-controller="Course"> Applications</a>
+        <a class="btn btn-outline-success" asp-action="Index" > Applications</a>
         <a class="btn btn-success" asp-action="Index" asp-controller="Home">Home</a>
     </div>
 </div>
-
