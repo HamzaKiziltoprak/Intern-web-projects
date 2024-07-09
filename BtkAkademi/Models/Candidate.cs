@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,8 +8,12 @@ namespace BtkAkademi.Models
 {
     public class Candidate
     {
+        [Required(ErrorMessage ="Email is required.")]
         public String? Email { get; set; } = String.Empty;
-        public String? FirstName { get; set; } = String.Empty;    
+        
+        [Required(ErrorMessage ="First Name is required.")]
+        public String? FirstName { get; set; } = String.Empty; 
+        [Required(ErrorMessage ="Last Name is required.")]   
         public String? LastName { get; set; } = String.Empty;
         public String? FullName => $"{FirstName} {LastName?.ToUpper()}";
         public int? Age { get; set; }
