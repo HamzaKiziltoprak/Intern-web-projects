@@ -11,6 +11,10 @@ namespace StoreApp.Models
 
         }
 
+        public RepositoryContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
