@@ -12,6 +12,7 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
     });
 var app = builder.Build();
 
+app.UseStaticFiles(); // For the wwwroot folder
 app.UseHttpsRedirection();
 app.UseRouting();
 
