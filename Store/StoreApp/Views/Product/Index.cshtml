@@ -1,27 +1,21 @@
-@model List<StoreApp.Models.Product>
 
-<!Document Type html>
-    <html lang="en">
+@model List<Product>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+@section Footer{
+    <div>
+        Only for Index footer
+    </div>
+}
 
-    <body>
-        @foreach (StoreApp.Models.Product product in Model)
-        {
-            <hr>
-            <div>
-                <h3>@product.ProductName</h3>
-                <p>@product.Price</p>
-                <p>
-                    <a href="/Product/Get/@product.ProductId">Get Details</a>
-                </p>
-            </div>
-        }
-    </body>
 
-    </html>
+@foreach (Product product in Model)
+{
+    
+    <div>
+        <h3>@product.ProductName</h3>
+        <p>@product.Price</p>
+        <p>
+            <a href="/Product/Get/@product.ProductId">Get Details</a>
+        </p>
+    </div>
+}
