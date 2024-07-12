@@ -4,5 +4,18 @@
     <h2>@Model.ProductName</h2>
     <p>@Model.Price.ToString("c")</p>
     <a asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a>
-    <hr/>
+    <hr />
+</div>
+
+<div class="col-sm-12 col-md-3 col-xl-3 my-2">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="~/images/image.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Model.ProductName</h5>
+            <p class="card-text"></p>
+            <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i> Go somewhere
+            </a>
+        </div>
+    </div>
 </div>
