@@ -13,6 +13,7 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
         b => b.MigrationsAssembly("StoreApp"));
     });
 
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>(); 
 
