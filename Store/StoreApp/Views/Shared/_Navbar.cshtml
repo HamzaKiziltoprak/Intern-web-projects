@@ -14,7 +14,7 @@
                 </a>
                 <a class="nav-link" asp-controller="Product" asp-action="Index">
                     <i class="fas fa-list"></i>
-                    Products
+                    Products (@await Component.InvokeAsync("ProductSummary"))
                 </a>
                 <a class="nav-link" asp-controller="Category" asp-action="Index">
                     <i class="fas fa-list"></i>
