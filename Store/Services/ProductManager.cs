@@ -31,5 +31,11 @@ namespace Services
         {
             return _manager.Product.GetAllProducts(trackChanges);
         }
+
+        public void CreateProduct(Product product)
+        {
+            _manager.Product.Create(product);
+            _manager.Save();
+        }
     }
 }
